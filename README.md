@@ -1,18 +1,23 @@
 # redirect_test_js
 
-## What it does
+## what it does
 
 Takes an initial URL and verifies that it is redirected (301) to the correct new URL.
 
-## How to use
+## how to use
 
 1. install node.js
 2. change to folder with source code in command prompt
 3. npm install
-4. node test.js pathToFile/linksToTest.csv
-5. to run examples: node test.js exampleFiles/exampleLinks.csv
+4. node test.js <filepath/filename> <httpStatusCode>
+5. to run example: node test.js exampleFiles/exampleLinks.csv
 
-## Formats
+## command line arguments
+
+|<filename>| required|
+|<httpStatusCode>| optional - default is 301|
+
+## formats
 
 Supported: .txt and .csv
 
