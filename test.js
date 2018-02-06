@@ -3,6 +3,13 @@ const http = require('http');
 const https = require('https');
 const url = require('url');
 
+// TODO:
+// add output options: cli (command line/ console output) -> basic output
+// txt/ csv -> more extensive output
+// xml / json
+// html
+
+
 // check if file name was provided as command line parameter
 if (process.argv.length < 3) {
   console.error('Usage: node test.js <filename>');
@@ -16,7 +23,7 @@ if (!process.argv.slice(2)[0].endsWith(".txt") && !process.argv.slice(2)[0].ends
 }
 
 // set file name
-const csvFile = process.argv.slice(2)[0];
+const inputFile = process.argv.slice(2)[0];
 
 // check if http status code was given, if not set default (301)
 if (process.argv.length < 4) {
@@ -26,7 +33,7 @@ if (process.argv.length < 4) {
 }
 
 // read lines from file in array (change new line chars if needed)
-const lines = fs.readFileSync(csvFile, 'utf8').split('\r\n').filter(Boolean);
+const lines = fs.readFileSync(inputFile, 'utf8').split('\r\n').filter(Boolean);
 
 // loop through lines
 lines.forEach(line => {
