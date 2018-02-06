@@ -14,8 +14,10 @@ Takes an initial URL and verifies that it is redirected (301) to the correct new
 
 ## command line arguments
 
-|[filename]| required|
-|[httpStatusCode]| optional - default is 301|
+arg |  |
+--- | --- |
+[filename]| required
+[httpStatusCode]| optional - default is 301
 
 ## formats
 
