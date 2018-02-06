@@ -1,7 +1,0 @@
-# node.js installieren
-
-# auf der Eingabeaufforderung in das Verzeichnis mit dem Quellcode wechseln
-# 
-npm install
-
-# node test.js links.csv
