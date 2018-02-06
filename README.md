@@ -2,7 +2,7 @@
 
 ## what it does
 
-Takes an initial URL and verifies that it is redirected (301) to the correct new URL.
+Takes an initial URL and verifies that it is redirected with the correct http status code to the correct new URL.
 
 ## how to use
 
