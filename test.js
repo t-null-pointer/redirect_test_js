@@ -9,6 +9,12 @@ if (process.argv.length < 3) {
   return;
 }
 
+// chech if file has supported extension
+if (!process.argv.slice(2)[0].endsWith(".txt") && !process.argv.slice(2)[0].endsWith(".csv")) {
+  console.error('Supported file extensions: .csv or .txt');
+  return;
+}
+
 // set file name
 const csvFile = process.argv.slice(2)[0];
 
@@ -53,7 +59,7 @@ lines.forEach(line => {
     };
     client = https;
   } else {
-    console.log('ERROR:', fromUrl.href, '\n  protocol has to be http: or https:, got', fromUrl.protocol);
+    console.log('ERROR2:', fromUrl.href, '\n  protocol has to be http: or https:, got', fromUrl.protocol);
     return;
   }
 
@@ -68,7 +74,7 @@ lines.forEach(line => {
       console.log('FAIL: Line', lines.indexOf(line) + 1, fromUrl.href, 'has response code', res.statusCode);
     }
   }).on('error', (e) => {
-    console.log('ERROR:', fromUrl.href, e.message);
+    console.log('ERROR1:', fromUrl.href, e.message);
   });
   req.end();
 });
