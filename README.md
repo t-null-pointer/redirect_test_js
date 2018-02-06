@@ -1,5 +1,9 @@
 # redirect_test_js
 
+## What it does
+
+Takes an initial URL and verifies that it is redirected (301) to the correct new URL.
+
 ## How to use
 
 1. install node.js
@@ -8,6 +12,7 @@
 4. node test.js pathToFile/linksToTest.csv
 5. to run examples: node test.js exampleFiles/exampleLinks.csv
 
+## Formats
 
 Supported: .txt and .csv
 
