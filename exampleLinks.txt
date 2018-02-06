@@ -1,0 +1,7 @@
+Initial URL, Expected URL
+http://www.tui.nl, https://www.tui.nl
+http://www.zalando.de,https://www.zalando.de
+http://amazon.de.,https://www.amazon.de
+http://netflix.com,https://www.netflix.com
+http://www.nyse.com,https://www.nyse.com/
+http://abc.com,http://abc.go.com/
