@@ -12,5 +12,5 @@
 Supported: .txt and .csv
 
 Expected format in file:
-initial link,expected link
-http://example.com,https://www.example.com
+> initial link,expected link
+> http://example.com,https://www.example.com
