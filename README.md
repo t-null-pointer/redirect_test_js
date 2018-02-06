@@ -7,7 +7,7 @@ Takes an initial URL and verifies that it is redirected with the correct http st
 ## how to use
 
 1. install node.js
-2. change to folder with source code in command prompt
+2. change to folder with checked out source code in command prompt
 3. npm install
 4. node test.js [filepath/filename] [httpStatusCode]
 5. to run example: node test.js exampleFiles/exampleLinks.csv
