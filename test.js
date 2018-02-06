@@ -59,7 +59,7 @@ lines.forEach(line => {
     };
     client = https;
   } else {
-    console.log('ERROR2:', fromUrl.href, '\n  protocol has to be http: or https:, got', fromUrl.protocol);
+    console.log('ERROR: Line', lines.indexOf(line) + 1, fromUrl.href, '\n  protocol has to be http: or https:, got', fromUrl.protocol);
     return;
   }
 
@@ -74,7 +74,7 @@ lines.forEach(line => {
       console.log('FAIL: Line', lines.indexOf(line) + 1, fromUrl.href, 'has response code', res.statusCode);
     }
   }).on('error', (e) => {
-    console.log('ERROR1:', fromUrl.href, e.message);
+    console.log('ERROR: Line',lines.indexOf(line) + 1, fromUrl.href, e.message);
   });
   req.end();
 });
