@@ -9,7 +9,7 @@ Takes an initial URL and verifies that it is redirected (301) to the correct new
 1. install node.js
 2. change to folder with source code in command prompt
 3. npm install
-4. node test.js <filepath/filename> <HttpStatusCode>
+4. node test.js [filepath/filename] [HttpStatusCode]
 5. to run example: node test.js exampleFiles/exampleLinks.csv
 
 ## command line arguments
