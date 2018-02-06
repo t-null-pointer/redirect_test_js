@@ -21,7 +21,7 @@ arg |  |
 
 ## formats
 
-Supported: .txt and .csv
+Supported file extensions: .txt and .csv
 
 Expected format in file:
 > initial link,expected link
