@@ -12,13 +12,13 @@ const url = require('url');
 
 // check if file name was provided as command line parameter
 if (process.argv.length < 3) {
-  console.error('>>> Usage: node test.js <filename>');
+  console.error('>>> USAGE: node test.js [filename]');
   return;
 }
 
 // chech if file has supported extension
 if (!process.argv.slice(2)[0].endsWith(".txt") && !process.argv.slice(2)[0].endsWith(".csv")) {
-  console.error('>>> Supported file extensions: .csv or .txt');
+  console.error('>>> SUPPORTED file extensions: .csv or .txt');
   return;
 }
 
