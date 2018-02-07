@@ -28,4 +28,6 @@ Expected format in file:
 >
 > http://example.com,https://www.example.com
 
-- 2018
+---
+
+2018
