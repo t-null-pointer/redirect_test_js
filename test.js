@@ -8,6 +8,7 @@ const url = require('url');
 // txt/ csv -> more extensive output
 // xml / json
 // html
+// write reporter.js for that and call the methods from there?
 
 
 // check if file name was provided as command line parameter
@@ -39,7 +40,7 @@ const lines = fs.readFileSync(inputFile, 'utf8').split('\r\n').filter(Boolean);
 lines.forEach(line => {
   // valid lines have to start with 'http'
   if (!line.startsWith('http')) {
-    console.error(line, 'is no valid url');
+    console.error(line, '>>> is no valid url');
     return;
   }
 

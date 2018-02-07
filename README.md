@@ -27,3 +27,5 @@ Expected format in file:
 > initial link,expected link
 >
 > http://example.com,https://www.example.com
+
+- 2018
