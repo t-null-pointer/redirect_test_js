@@ -9,6 +9,7 @@ const url = require('url');
 // xml / json
 // html
 // write reporter.js for that and call the methods from there?
+// write tests for this???
 
 
 // check if file name was provided as command line parameter

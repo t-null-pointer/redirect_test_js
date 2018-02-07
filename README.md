@@ -9,7 +9,7 @@ Takes an initial URL and verifies that it is redirected with the correct http st
 1. install node.js
 2. change to folder with checked out source code in command prompt
 3. npm install
-4. node test.js [filepath/filename] [httpStatusCode]
+4. node test.js [filepath/filename] [expectedhttpStatusCode]
 5. to run example: node test.js exampleFiles/exampleLinks.csv
 
 ## command line arguments
@@ -17,7 +17,7 @@ Takes an initial URL and verifies that it is redirected with the correct http st
 arg |  |
 --- | --- |
 [filename]| required
-[httpStatusCode]| optional - default is 301
+[expectedhttpStatusCode]| optional - default is 301
 
 ## formats
 
